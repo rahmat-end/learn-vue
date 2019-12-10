@@ -1,0 +1,24 @@
+// variables
+$text-color: #7b9d99;
+$bg-color: #a2bab7;
+
+.header-wrap {
+    padding: 20px;
+    background-color: $bg-color;
+
+    h1 {
+        color: blue;
+    }
+    p {
+        color: red;
+    }
+    .header-list {
+        list-style-type: none;
+        padding: 10px;
+
+        li {
+            font-size: 1.5em;
+            color: $text-color;
+        }
+    }
+}
