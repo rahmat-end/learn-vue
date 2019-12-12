@@ -8,21 +8,6 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  test: /\.scss$/,
-  use: [
-    'vue-style-loader',
-    'css-loader',
-    {
-      loader: 'sass-loader',
-      options: {
-        data: `
-          @import "@/stylesheets/main.scss";
-        `
-      }
-    }
-  ],
   router,
-  components: { App },
-  template: '<App/>'
-})
+  render: h => h(App)
+}).$mount('#app')
